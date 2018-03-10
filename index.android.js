@@ -16,12 +16,12 @@ export default class atmConsultoria extends Component {
           /* definir a cena com na rota */
           if (route.id === 'a') {
             //exibir a cenaPrinciapl
-            return (<CenaPrincipal />)
+            return (<CenaPrincipal navigator={navigator} />);
           }
 
           if (route.id === 'b') {
             //exibir a cenaClientes
-            return (<CenaClientes />)
+            return (<CenaClientes />);
           }
         }}
       />
