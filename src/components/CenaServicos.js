@@ -30,10 +30,10 @@ export default class CenaServicos extends Component {
                     <Text style={styles.txtTitulo}>Nossos Serviços</Text>
                 </View>
 
-                <View style={styles.detalheContatos}>
-                    <Text style={styles.txtContatos}>- Consultoria</Text>
-                    <Text style={styles.txtContatos}>- Processos</Text>
-                    <Text style={styles.txtContatos}>- Acompanhamento de Projetos</Text>
+                <View style={styles.detalheServicos}>
+                    <Text style={styles.txtServicos}>- Consultoria</Text>
+                    <Text style={styles.txtServicos}>- Processos</Text>
+                    <Text style={styles.txtServicos}>- Acompanhamento de Projetos</Text>
                 </View>
 
             </View>
@@ -52,11 +52,11 @@ const styles = StyleSheet.create({
         marginLeft: 10,
         marginTop: 25
     },
-    detalheContatos: {
+    detalheServicos: {
         padding: 20,
         marginTop: 20
     },
-    txtContatos: {
+    txtServicos: {
         fontSize: 18
     }
 });

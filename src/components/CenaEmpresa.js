@@ -30,8 +30,8 @@ export default class CenaEmpresa extends Component {
                     <Text style={styles.txtTitulo}>A Empresa</Text>
                 </View>
 
-                <View style={styles.detalheContatos}>
-                    <Text style={styles.txtContatos}>Lorem ipsum dolorem sit amet, dolorem sit amet ipsum dolorem sit</Text>
+                <View style={styles.detalheEmpresa}>
+                    <Text style={styles.txtEmpresa}>Lorem ipsum dolorem sit amet, dolorem sit amet ipsum dolorem sit</Text>
                 </View>
 
             </View>
@@ -50,11 +50,11 @@ const styles = StyleSheet.create({
         marginLeft: 10,
         marginTop: 25
     },
-    detalheContatos: {
+    detalheEmpresa: {
         padding: 20,
         marginTop: 20
     },
-    txtContatos: {
+    txtEmpresa: {
         fontSize: 18
     }
 });
