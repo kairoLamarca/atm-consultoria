@@ -23,7 +23,9 @@ export default class CenaClientes extends Component {
                     //hidden
                     backgroundColor='#CCC'
                 />
-                <BarraNavegacao />
+
+                {/* Se não mpassar valor na props, segnifica que é true */}
+                <BarraNavegacao voltar navigator={this.props.navigator} />
 
                 <View style={styles.cabecalho}>
                     <Image source={detalheCliente} />

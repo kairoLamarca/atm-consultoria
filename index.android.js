@@ -21,7 +21,7 @@ export default class atmConsultoria extends Component {
 
           if (route.id === 'b') {
             //exibir a cenaClientes
-            return (<CenaClientes />);
+            return (<CenaClientes navigator={navigator} />);
           }
         }}
       />

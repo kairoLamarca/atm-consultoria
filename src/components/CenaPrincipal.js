@@ -25,6 +25,7 @@ export default class CenaPrincipal extends Component {
                     //hidden
                     backgroundColor='#CCC'
                 />
+                
                 <BarraNavegacao />
 
                 <View style={styles.logo}>
