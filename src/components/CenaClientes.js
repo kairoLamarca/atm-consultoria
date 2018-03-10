@@ -3,7 +3,8 @@ import {
     View,
     StatusBar,
     Image,
-    Text
+    Text,
+    StyleSheet
 } from 'react-native';
 
 //importar o componente barra de navegação
@@ -24,14 +25,43 @@ export default class CenaClientes extends Component {
                 />
                 <BarraNavegacao />
 
-                <Image source={detalheCliente} />
-                <Text>Nossos Clientes</Text>
-                <Image source={cliente1} />
-                <Text>Lorem ipsum dolorem</Text>
-                <Image source={cliente2} />
-                <Text>Lorem ipsum dolorem</Text>
+                <View style={styles.cabecalho}>
+                    <Image source={detalheCliente} />
+                    <Text style={styles.txtTitulo}>Nossos Clientes</Text>
+                </View>
+
+                <View style={styles.detalheCliente}>
+                    <Image source={cliente1} />
+                    <Text style={styles.txtDetalheCliente}>Lorem ipsum dolorem</Text>
+                </View>
+
+                <View style={styles.detalheCliente}>
+                    <Image source={cliente2} />
+                    <Text style={styles.txtDetalheCliente}>Lorem ipsum dolorem</Text>
+                </View>
 
             </View>
         );
     }
 }
+
+const styles = StyleSheet.create({
+    cabecalho: {
+        flexDirection: 'row',
+        marginTop: 20
+    },
+    txtTitulo: {
+        fontSize: 30,
+        color: '#B9C941',
+        marginLeft: 10,
+        marginTop: 25
+    },
+    detalheCliente: {
+        padding: 20,
+        marginTop: 10
+    },
+    txtDetalheCliente: {
+        fontSize: 18,
+        marginLeft: 20
+    }
+});
