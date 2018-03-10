@@ -17,7 +17,7 @@ const cliente2 = require('../imgs/cliente2.png');
 export default class CenaClientes extends Component {
     render() {
         return (
-            <View>
+            <View style={{ flex: 1, backgroundColor: '#FFF' }}>
                 {/* Status bar com hidden true, faz não aprecer a barra de cima do android */}
                 <StatusBar
                     //hidden

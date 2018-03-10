@@ -82,7 +82,8 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     menu: {
-        alignItems: 'center'
+        alignItems: 'center',
+        backgroundColor: '#FFF'
     },
     menuGrupo: {
         flexDirection: 'row'

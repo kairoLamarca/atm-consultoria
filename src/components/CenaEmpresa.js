@@ -15,7 +15,7 @@ const detalheEmpresa = require('../imgs/detalhe_empresa.png');
 export default class CenaEmpresa extends Component {
     render() {
         return (
-            <View>
+            <View style={{ flex: 1, backgroundColor: '#FFF' }}>
                 {/* Status bar com hidden true, faz não aprecer a barra de cima do android */}
                 <StatusBar
                     //hidden

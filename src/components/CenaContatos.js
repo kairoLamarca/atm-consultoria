@@ -15,7 +15,7 @@ const detalheContatos = require('../imgs/detalhe_contato.png');
 export default class CenaContatos extends Component {
     render() {
         return (
-            <View>
+            <View style={{ flex: 1, backgroundColor: '#FFF' }}>
                 {/* Status bar com hidden true, faz não aprecer a barra de cima do android */}
                 <StatusBar
                     //hidden
