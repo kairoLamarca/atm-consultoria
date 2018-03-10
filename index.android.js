@@ -6,7 +6,9 @@ import { Navigator } from 'react-native-deprecated-custom-components';
 
 import CenaPrincipal from './src/components/CenaPrincipal';
 import CenaClientes from './src/components/CenaClientes';
-import CenaContatos from './src/components/cenaContatos';
+import CenaContatos from './src/components/CenaContatos';
+import CenaEmpresa from './src/components/CenaEmpresa';
+import CenaServicos from './src/components/CenaServicos';
 
 export default class atmConsultoria extends Component {
   render() {
@@ -28,6 +30,16 @@ export default class atmConsultoria extends Component {
           if (route.id === 'contato') {
             //exibir a CenaContatos
             return (<CenaContatos navigator={navigator} />);
+          }
+
+          if (route.id === 'empresa') {
+            //exibir a CenaEmpresa
+            return (<CenaEmpresa navigator={navigator} />);
+          }
+
+          if (route.id === 'servicos') {
+            //exibir a CenaServicos
+            return (<CenaServicos navigator={navigator} />);
           }
         }}
       />
