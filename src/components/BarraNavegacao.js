@@ -15,6 +15,8 @@ export default class BarraNavegacao extends Component {
             return (
                 <View style={[styles.barraTitulo, { backgroundColor: this.props.corDeFundo }]}>
                     <TouchableHighlight
+                        underlayColor={this.props.corDeFundo}
+                        activeOpacity={0.3}
                         onPress={() => {
                             //a função pop irá remover a cena do topo do navigator, removendo a cena atual e voltando para a cena anterior
                             this.props.navigator.pop();
