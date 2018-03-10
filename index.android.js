@@ -1,24 +1,14 @@
 import React, { Component } from 'react';
 import {
-  AppRegistry,
-  View,
-  StatusBar
+  AppRegistry
 } from 'react-native';
 
-//importar o componente barra de navegação
-import BarraNavegacao from './src/components/BarraNavegacao';
+import CenaPrincipal from './src/components/CenaPrincipal';
 
 export default class atmConsultoria extends Component {
   render() {
     return (
-      <View>
-        {/* Status bar com hidden true, faz não aárecer a barra de cima do android */}
-        <StatusBar
-          //hidden
-          backgroundColor='#CCC'
-        />
-        <BarraNavegacao />
-      </View>
+      <CenaPrincipal />
     );
   }
 }
