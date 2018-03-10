@@ -19,11 +19,11 @@ export default class CenaContatos extends Component {
                 {/* Status bar com hidden true, faz não aprecer a barra de cima do android */}
                 <StatusBar
                     //hidden
-                    backgroundColor='#CCC'
+                    backgroundColor='#61BD8C'
                 />
 
                 {/* Se não mpassar valor na props, segnifica que é true */}
-                <BarraNavegacao voltar navigator={this.props.navigator} />
+                <BarraNavegacao voltar navigator={this.props.navigator} corDeFundo='#61BD8C' />
 
                 <View style={styles.cabecalho}>
                     <Image source={detalheContatos} />

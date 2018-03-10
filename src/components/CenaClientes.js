@@ -21,11 +21,11 @@ export default class CenaClientes extends Component {
                 {/* Status bar com hidden true, faz não aprecer a barra de cima do android */}
                 <StatusBar
                     //hidden
-                    backgroundColor='#CCC'
+                    backgroundColor='#B9C941'
                 />
 
                 {/* Se não mpassar valor na props, segnifica que é true */}
-                <BarraNavegacao voltar navigator={this.props.navigator} />
+                <BarraNavegacao voltar navigator={this.props.navigator} corDeFundo='#B9C941' />
 
                 <View style={styles.cabecalho}>
                     <Image source={detalheCliente} />

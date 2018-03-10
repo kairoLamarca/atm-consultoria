@@ -19,11 +19,11 @@ export default class CenaEmpresa extends Component {
                 {/* Status bar com hidden true, faz não aprecer a barra de cima do android */}
                 <StatusBar
                     //hidden
-                    backgroundColor='#CCC'
+                    backgroundColor='#EC7148'
                 />
 
                 {/* Se não mpassar valor na props, segnifica que é true */}
-                <BarraNavegacao voltar navigator={this.props.navigator} />
+                <BarraNavegacao voltar navigator={this.props.navigator} corDeFundo='#EC7148' />
 
                 <View style={styles.cabecalho}>
                     <Image source={detalheEmpresa} />
